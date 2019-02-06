@@ -10,7 +10,7 @@
 [![Видос](https://img.youtube.com/vi/ROd0PoMJpEo/0.jpg)](https://www.youtube.com/watch?v=ROd0PoMJpEo)
  
 На основе обработанных данных генерируется отчёт в формате CSV.
-Может быть использован в качестве источника данных для отчётов по рекламе.
+Может быть использован в качестве источника данных для эфирных справок.
  
 Кроссплатформенный (Windows, Mac, Linux) JAR и файл EXE для Windows доступны в папке [dpi_scte_jar](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/tree/master/dpi_scte_jar)
  
