@@ -11,8 +11,3 @@ Airbox [dpi inserter module] Broadcast DPI (SCTE-35/104) tags.
 
 На основе обработанных данных генерируется отчёт в CSV (разделитель: "|").
  
- 
-## Поддержка
-* Бесплатно можете писать [на Github](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/issues)
-* А на коммерческой основе можете обратиться [к нам](https://bridgemedia.ru/about/contacts/)
-* или [www.babak.ru](http://www.babak.ru)
