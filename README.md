@@ -3,7 +3,7 @@ Airbox [dpi inserter module] Broadcast DPI (SCTE-35/104) tags.
  
 Программа для подсчёта и разметки эфирных блоков в метках прямого эфира DPI ([SCTE-35/104](https://en.wikipedia.org/wiki/SCTE-35)) в плейлистах оборудования для вещания Airbox. Например, для разметки рекламных блоков.
  
-Для настройки используйте файл config.ini
+Для настройки используйте файл [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini)
  
 Демонстрация работы:
 
