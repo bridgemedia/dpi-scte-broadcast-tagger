@@ -1,4 +1,4 @@
-# dpi-scte
+# dpi-scte-broadcast-tagger
 Airbox [dpi inserter module] Broadcast DPI (SCTE-35/104) tags fix.
  
 Программа для подсчёта и разметки рекламного времени в метках DPI ([SCTE-35/104](https://en.wikipedia.org/wiki/SCTE-35)).
