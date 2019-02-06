@@ -7,7 +7,7 @@ Airbox [dpi inserter module] Broadcast DPI (SCTE-35/104) tags.
  
 Демонстрация работы:
 
-[![Видос](https://img.youtube.com/vi/cCT3PKnENuI/0.jpg)](https://www.youtube.com/watch?v=cCT3PKnENuI)
+[![Видос](https://img.youtube.com/vi/ROd0PoMJpEo/0.jpg)](https://www.youtube.com/watch?v=ROd0PoMJpEo)
  
 Написано на [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
