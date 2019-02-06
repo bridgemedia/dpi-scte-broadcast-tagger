@@ -41,6 +41,10 @@ public class Report {
 
     void writeCsv( String csvPath ) {
 
+//        if ( csvPath == null ) {
+//            System.out.println( "NuN" );
+//        }
+
         System.out.println("---Report:---");
 
         StringBuilder sb = new StringBuilder();
@@ -51,7 +55,8 @@ public class Report {
             sb.append( string ).append("\r\n");
         });
 
-        File file = new File( csvPath );
+//        File file = new File( csvPath );
+        File file = new File( "report.csv" );
         try ( BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             writer.write( sb.toString());
 

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Config {
 
     ArrayList<ChannelConfigBean> channelConfigs = new ArrayList<>();
-    String csvPath;
+    public String csvpath;
 
     Config( String filename ) {
 
@@ -24,7 +24,7 @@ public class Config {
         try {
 
             Ini ini = new Ini(new FileReader(filename));
-            csvPath = ini.get( "defaults" ).fetch( "scvpath" );
+            csvpath = ini.get( "defaults" ).fetch( "csvpath" );
 
             String default_playlist_file_extension = ini.get( "defaults" ).fetch( "playlist_file_extension" );
             String default_playlist_file_charset = ini.get( "defaults" ).fetch( "playlist_file_charset" );

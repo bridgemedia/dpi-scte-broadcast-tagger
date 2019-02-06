@@ -14,7 +14,6 @@ import java.util.Scanner;
 
 public class Main {
     public static final String STANDARD_CONFIG_FILENAME = "config.ini";
-    private static String csvPath;
 
     /**
      * Enter program
@@ -25,7 +24,7 @@ public class Main {
     public static void main( String[] args ) {
 	    // read Config
         Config config = new Config( args.length > 0 ? args[0] : STANDARD_CONFIG_FILENAME );
-        csvPath = config.csvPath;
+        String csvpath = config.csvpath;
 
         ArrayList<ChannelConfigBean> channelConfigs = config.getChannelConfigs();
         ArrayList<TVChannel> tvChannels = new ArrayList<>();
@@ -39,7 +38,7 @@ public class Main {
                 tvChannels.add( channel );
 
                 System.out.println("");
-            
+
             } catch (Exception e) {
                 e.printStackTrace();
 
@@ -48,10 +47,8 @@ public class Main {
         }
 
 
-
         Report report = new Report( tvChannels );
-        report.writeCsv( csvPath );
-
+        report.writeCsv( csvpath );
 
         // Wait for user input
         System.out.println("Done. Press <enter> to exit program");

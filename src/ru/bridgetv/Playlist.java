@@ -38,7 +38,8 @@ class Playlist {
             BroadcastingBlock broadcastingBlock = null;
 
             ins = new FileInputStream( path );
-            r = new InputStreamReader( ins, channelConfig.playlist_file_charset ); // leave charset out for default
+//            r = new InputStreamReader( ins, channelConfig.playlist_file_charset ); // leave charset out for default
+            r = new InputStreamReader( ins, "windows-1251" ); // leave charset out for default
             br = new BufferedReader( r );
 
             while ((line = br.readLine()) != null) {
