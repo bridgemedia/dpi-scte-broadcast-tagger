@@ -9,7 +9,7 @@ Airbox [dpi inserter module] Broadcast DPI (SCTE-35/104) tags fix.
 
 [![Видос](https://img.youtube.com/vi/cCT3PKnENuI/0.jpg)](https://www.youtube.com/watch?v=cCT3PKnENuI)
  
-Написано на [Java 9+](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+Написано на [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## Поддержка
 * Бесплатно можете писать [на Github](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/issues)
