@@ -48,4 +48,4 @@
  | block_stop_substring | Подстрока для определения окончания рекламного блока | 
  | clip_start_substring | Подстрока для определения запуска рекламного ролика | 
 
-в файле [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini).
+в файле [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini)
