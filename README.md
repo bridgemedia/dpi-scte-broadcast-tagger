@@ -36,7 +36,7 @@
 На основе обработанных данных генерируется отчёт в формате CSV.
 Может быть использован в качестве источника данных для эфирных справок.
  
-Для настройки используйте файл [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini):
+Для настройки используйте:
 
  | Параметр | Назначение | 
  | --- | --- | 
@@ -47,3 +47,5 @@
  | block_start_substring | Подстрока для определения начала рекламного блока | 
  | block_stop_substring | Подстрока для определения окончания рекламного блока | 
  | clip_start_substring | Подстрока для определения запуска рекламного ролика | 
+
+в файле [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini).
