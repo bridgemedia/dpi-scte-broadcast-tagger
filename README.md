@@ -1,14 +1,15 @@
 # dpi-scte-broadcast-tagger
 Программа для подсчёта и разметки эфирных блоков в метках прямого эфира ([SCTE-35/104](https://en.wikipedia.org/wiki/SCTE-35)) в плейлистах оборудования для вещания. Например, Airbox (DPI inserter module) Broadcast. Например, для разметки рекламных блоков.
-
+ 
+Кроссплатформенный (Windows, Mac, Linux) JAR и файл EXE для Windows доступны в папке [dpi_scte_jar](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/tree/master/dpi_scte_jar)
+ 
 Поддержка нескольких телеканалов одновременно. Для настройки используйте файл [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini)
  
 Демонстрация работы:
  
 [![Видос](https://img.youtube.com/vi/ROd0PoMJpEo/0.jpg)](https://www.youtube.com/watch?v=ROd0PoMJpEo)
  
-На основе обработанных данных генерируется отчёт в формате CSV.
-Может быть использован в качестве источника данных для эфирных справок.
+Пример блока событий вещания эфира с рекламными метками SCTE-35/104, содержащих продолжительность и уникальный идентификатор рекламного блока:
 
 ```
 #EXTEVENT /ModName DPI Plugin;DPI Plugin :: 'Splice Start Normal', Duration 00:1:15:000;0;1-00:1:15:000-143-0-0;0.00000;0
@@ -31,8 +32,7 @@
 #DYNAMICMEDIA FALSE
 #EXTEVENT /ModName DPI Plugin;DPI Plugin :: 'Splice End Normal';0;3-00:00:00:000-143-0-0;0.00000;0
 ```
-Пример блока событий вещания эфира с рекламными метками SCTE-35/104, содержащих продолжительность и уникальный идентификатор рекламного блока:
- 
-Кроссплатформенный (Windows, Mac, Linux) JAR и файл EXE для Windows доступны в папке [dpi_scte_jar](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/tree/master/dpi_scte_jar)
- 
+
+На основе обработанных данных генерируется отчёт в формате CSV.
+Может быть использован в качестве источника данных для эфирных справок.
  
