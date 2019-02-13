@@ -3,7 +3,7 @@
  
 Кроссплатформенный (Windows, Mac, Linux) JAR и файл EXE для Windows доступны в папке [dpi_scte_jar](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/tree/master/dpi_scte_jar)
  
-Поддержка нескольких телеканалов одновременно. Для настройки используйте файл [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini)
+Поддержка нескольких телеканалов одновременно. 
  
 Демонстрация работы:
  
@@ -36,3 +36,13 @@
 На основе обработанных данных генерируется отчёт в формате CSV.
 Может быть использован в качестве источника данных для эфирных справок.
  
+Для настройки используйте файл [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini):
+Параметр|Назначение
+---|---
+playlist_folder_in|Путь к папкае с плейлистами на вход
+playlist_folder_out|Путь к папке с плейлистами на выход
+playlist_file_extension|Расширение файлов плейлистов
+playlist_file_charset|Кодировка
+block_start_substring|Подстрока для определения начала рекламного блока
+block_stop_substring|Подстрока для определения окончания рекламного блока
+clip_start_substring|Подстрока для определения запуска рекламного ролика
