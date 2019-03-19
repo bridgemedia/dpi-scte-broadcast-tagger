@@ -7,12 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * Report builder
+ * CSV report builder
  */
 public class Report {
 
     ArrayList<String> result = new ArrayList<>();
-
 
     Report(ArrayList<TVChannel> TVChannels) {
 

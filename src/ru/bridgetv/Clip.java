@@ -12,6 +12,10 @@ class Clip {
 
     Integer duration_sec; // Unformatted seconds
 
+    /**
+     * @param _file_line_number
+     * @param _start_file_line_string
+     */
     Clip (Integer _file_line_number, String _start_file_line_string) {
         file_line_number = _file_line_number;
         start_file_line_string = _start_file_line_string;

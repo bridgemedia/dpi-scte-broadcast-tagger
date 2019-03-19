@@ -20,6 +20,10 @@ class BroadcastingBlock {
     String stop_file_line_string; // Advertising Block stop event: line string
     String stop_file_line_string__new; // Advertising Block stop event: line string (updated)
 
+    /**
+     * @param _start_file_line_number
+     * @param _start_file_line_string
+     */
     public BroadcastingBlock(Integer _start_file_line_number, String _start_file_line_string)  {
         uid = _start_file_line_number;
         start_file_line_number = _start_file_line_number;
@@ -27,12 +31,20 @@ class BroadcastingBlock {
 
     }
 
+    /**
+     * @param clip
+     * @return
+     */
     Integer addClip(Clip clip) {
         clips.add( clip );
         return clips.size();
 
     }
 
+    /**
+     * @param _stop_file_line_number
+     * @param _start_file_line_string
+     */
     void close(Integer _stop_file_line_number, String _start_file_line_string) {
         stop_file_line_number = _stop_file_line_number;
         stop_file_line_string = _start_file_line_string;
@@ -104,6 +116,10 @@ class BroadcastingBlock {
 
     }
 
+    /**
+     * @param _duration_sec
+     * @return
+     */
     public static String splitToComponentTimes( Integer _duration_sec ) {
         long longVal = _duration_sec.longValue();
         int hours = (int) longVal / 3600;
@@ -117,24 +133,6 @@ class BroadcastingBlock {
                 + String.format("%02d" , mins)
                 + ":"
                 + String.format("%02d" , secs);
-
-    }
-
-
-//    public static int[] splitToComponentTimes( BigDecimal biggy ) {
-//        long longVal = biggy.longValue();
-//        int hours = (int) longVal / 3600;
-//        int remainder = (int) longVal - hours * 3600;
-//        int mins = remainder / 60;
-//        remainder = remainder - mins * 60;
-//        int secs = remainder;
-//
-//        int[] ints = {hours , mins , secs};
-//        return ints;
-//    }
-
-    public ArrayList<Clip> getClips() {
-        return clips;
 
     }
 

@@ -17,6 +17,9 @@ public class Config {
     ArrayList<ChannelConfigBean> channelConfigs = new ArrayList<>();
     public String csvpath;
 
+    /**
+     * @param filename
+     */
     Config( String filename ) {
 
         System.out.println( "Config file: " + filename );
@@ -51,6 +54,7 @@ public class Config {
 
                 channelConfig.playlist_folder_in = ini.get( channel_key ).fetch( "playlist_folder_in" );
                 channelConfig.playlist_folder_out = ini.get( channel_key ).fetch( "playlist_folder_out" );
+                channelConfig.playlist_folder_processed = ini.get( channel_key ).fetch( "playlist_folder_processed" );
 
                 channelConfigs.add( channelConfig );
 

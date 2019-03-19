@@ -9,6 +9,7 @@
 
 package ru.bridgetv;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -49,11 +50,11 @@ public class Main {
 
         Report report = new Report( tvChannels );
         report.writeCsv( csvpath );
+        Toolkit.getDefaultToolkit().beep();
 
         // Wait for user input
         System.out.println("Done. Press <enter> to exit program");
         Scanner keyIn = new Scanner(System.in);
-        keyIn.nextLine();
         keyIn.nextLine();
 
     }

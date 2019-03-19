@@ -6,6 +6,7 @@ public interface  ChannelConfig {
 
     public String playlist_folder_in = null;
     public String playlist_folder_out = null;
+    public String playlist_folder_processed = null;
     public String playlist_file_extension = null;
     public String playlist_file_charset = null;
 

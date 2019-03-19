@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>console</headerType>
-  <jar>G:\BABAK\JAVA\dpi-scte\dpi_scte_jar\dpi-scte.jar</jar>
-  <outfile>G:\BABAK\JAVA\dpi-scte\dpi_scte_jar\dpi_scte.exe</outfile>
+  <jar>D:\BABAK\JAVA\dpi-scte\dpi_scte_jar\dpi-scte.jar</jar>
+  <outfile>D:\BABAK\JAVA\dpi-scte\dpi_scte_jar\dpi_scte.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>G:\BABAK\JAVA\dpi-scte\dpi_scte_jar\iconfinder_icon-148-tag-add_314742.ico</icon>
+  <icon>D:\BABAK\JAVA\dpi-scte\dpi_scte_jar\iconfinder_icon-148-tag-add_314742.ico</icon>
   <singleInstance>
     <mutexName>dpi_scte_jar</mutexName>
     <windowTitle></windowTitle>

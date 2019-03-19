@@ -14,9 +14,13 @@ import java.util.stream.Stream;
 public class TVChannel {
 
     public ChannelConfigBean channelConfig;
-    static ArrayList<String> pathesToProcess = new ArrayList<String>();
+    static ArrayList<String> pathesToProcess;
     ArrayList<Playlist> Playlists = new ArrayList<Playlist>();
 
+    /**
+     * @param _channelConfig
+     * @throws Exception
+     */
     TVChannel( ChannelConfigBean _channelConfig ) throws Exception {
         channelConfig = _channelConfig;
 
@@ -41,6 +45,9 @@ public class TVChannel {
         //Scan playlist input folder
         assert channelConfig.playlist_file_extension != null;
         Stream<Path> paths = Files.walk( Paths.get( channelConfig.playlist_folder_in ));
+
+        this.pathesToProcess = new ArrayList<String>();
+
         paths
             .filter( Files::isRegularFile )
             .filter( p -> p.toString().endsWith( "." + channelConfig.playlist_file_extension ) )
@@ -48,7 +55,8 @@ public class TVChannel {
 
         pathesToProcess.forEach( (path)->{
             Playlist playlist = new Playlist( path, channelConfig );
-            Playlists.add( playlist );
+            this.Playlists.add( playlist );
+
 
         });
 

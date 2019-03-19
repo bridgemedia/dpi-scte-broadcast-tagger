@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Single playlist from channelConfig input folder
+ * Single playlist file from channelConfig input folder
  */
 class Playlist {
     public String path;
@@ -16,11 +16,17 @@ class Playlist {
     public ChannelConfigBean channelConfig;
     public ArrayList<BroadcastingBlock> broadcastingBlocks = new ArrayList<>();
 
+    /**
+     * Create new playlist
+     * @param _path
+     * @param _channelConfig
+     */
     Playlist(String _path, ChannelConfigBean _channelConfig) {
         path = _path;
         channelConfig = _channelConfig;
 
-        filename = new File( path ).getName(); //2019_01_28_00_00_00.ply
+        File file = new File( path );
+        filename = file.getName(); //2019_01_28_00_00_00.ply
         String[] filename_array = filename.split("_");
         date = filename_array[0] + "-" + filename_array[1] + "-" + filename_array[2];
 
@@ -80,8 +86,19 @@ class Playlist {
 
         updateBlockLines();
 
+        //move file to processed folder (and create if not exists)
+        File playlist_folder_processed = new File( channelConfig.playlist_folder_processed );
+        if (! playlist_folder_processed.exists()){
+            playlist_folder_processed.mkdir();
+        }
+
+        file.renameTo( new File( channelConfig.playlist_folder_processed + File.separator + filename ) );
+
     }
 
+    /**
+     * Update processed block
+     */
     void updateBlockLines() {
         // copy file to the new destination
         Path source = FileSystems.getDefault().getPath( path );

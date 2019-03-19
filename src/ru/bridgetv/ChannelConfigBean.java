@@ -10,6 +10,8 @@ public class ChannelConfigBean implements ChannelConfig {
 
     public String playlist_folder_in;
     public String playlist_folder_out;
+    public String playlist_folder_processed;
+
     public String playlist_file_extension;
     public String playlist_file_charset;
 
