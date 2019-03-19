@@ -27,7 +27,7 @@
 #DYNAMICMEDIA FALSE
 #TYPE MPEG2 (48kHz)
 #TC 0.00000
-"V:\VIDEO_bridge tv\Commercial\812278.mpg";0.00000;20.00000;;ARKO Black Star
+"V:\VIDEO_bridge tv\Commercial\812278.mpg";0.00000;20.00000;;Blistanie.com
 #LISTID 2064845618551
 #DYNAMICMEDIA FALSE
 #EXTEVENT /ModName DPI Plugin;DPI Plugin :: 'Splice End Normal';0;3-00:00:00:000-143-0-0;0.00000;0
