@@ -42,6 +42,7 @@
  | --- | --- | 
  | playlist_folder_in | Путь к папкае с плейлистами на вход | 
  | playlist_folder_out | Путь к папке с плейлистами на выход | 
+ | playlist_folder_processed | Путь к папке с обработанными плейлистами | 
  | playlist_file_extension | Расширение файлов плейлистов | 
  | playlist_file_charset | Кодировка | 
  | block_start_substring | Подстрока для определения начала рекламного блока | 
