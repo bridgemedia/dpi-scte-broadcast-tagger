@@ -3,7 +3,7 @@
  
 Кроссплатформенный (Windows, Mac, Linux) JAR и файл EXE для Windows доступны в папке [dpi_scte_jar](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/tree/master/dpi_scte_jar)
  
-Поддержка нескольких телеканалов одновременно. 
+Поддержка нескольких телеканалов. Поддержка сетевых путей.
  
 Демонстрация работы:
  
