@@ -51,7 +51,7 @@
 
 в файле [config.ini](https://github.com/bridgemedia/dpi-scte-broadcast-tagger/blob/master/config.ini)
 
-Параметры командной строки:
-args[0] -- путь к конфигурационному .ini-файлу
-args[1] -- "nowait" для завершения программы без ожидания
+Параметры командной строки:  
+args[0] -- путь к конфигурационному .ini-файлу  
+args[1] -- "nowait" для завершения программы без ожидания  
 
