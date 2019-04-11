@@ -52,10 +52,14 @@ public class Main {
         report.writeCsv( csvpath );
         Toolkit.getDefaultToolkit().beep();
 
-        // Wait for user input
-        System.out.println("Done. Press <enter> to exit program");
-        Scanner keyIn = new Scanner(System.in);
-        keyIn.nextLine();
+        if ( args[1].toString() == "await" ) {
+            // Wait for user input
+            System.out.println("Done. Press <enter> to exit program");
+            Scanner keyIn = new Scanner(System.in);
+            keyIn.nextLine();
+
+
+        }
 
     }
 
